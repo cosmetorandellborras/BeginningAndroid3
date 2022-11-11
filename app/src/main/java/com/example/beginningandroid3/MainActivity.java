@@ -44,16 +44,16 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
     @Override
     public void onClick(View view) {
-        Intent intent = new Intent();
+        Intent intent;
         switch (view.getId()) {
             case R.id.activity1:  intent = new Intent(getApplicationContext(), ClockActivity.class);
             startActivity(intent); break;
             case R.id.button2:  intent = new Intent(getApplicationContext(), ClockActivity2.class);
-            startActivity(intent);
+            startActivity(intent); break;
             case R.id.button3: intent = new Intent (getApplicationContext(), LinearLayoutRadioButtons.class);
             startActivity(intent); break;
             case R.id.button4: intent = new Intent (getApplicationContext(), LinearLayoutWeight.class);
-            startActivity(intent);
+            startActivity(intent); break;
             case R.id.button5: intent = new Intent (getApplicationContext(),RelativeLayoutDemo.class);
             startActivity(intent); break;
             case R.id.button6: intent = new Intent (getApplicationContext(),OverleapDemo.class);
